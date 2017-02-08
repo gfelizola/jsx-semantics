@@ -1,0 +1,72 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true,
+        "jasmine": true,
+        "jest": true
+    },
+    "extends": "eslint:recommended",
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "globals": {
+        "NODE_ENV": false,
+        "SCOPE": false,
+        "EXPRESS_SCOPE": false,
+        "EXPRESS_API_URL": false,
+        "i18nMap": false
+    },
+    "rules": {
+        "dot-notation": ["error", { "allowKeywords": true }],
+        "eqeqeq": ["error"],
+        "no-alert": ["error"],
+        "no-cond-assign": ["error"],
+        "no-console": ["error"],
+        "no-const-assign": ["error"],
+        "no-constant-condition": ["error"],
+        "no-debugger": ["error"],
+        "no-dupe-args": ["error"],
+        "no-dupe-keys": ["error"],
+        "no-duplicate-case": ["error"],
+        "no-empty": ["error"],
+        "no-empty-character-class": ["error"],
+        "no-eq-null": ["error"],
+        "no-eval": ["error"],
+        "no-ex-assign": ["error"],
+        "no-extra-boolean-cast": ["error"],
+        "no-extra-semi": ["error"],
+        "no-inner-declarations": ["error"],
+        "no-invalid-regexp": ["error"],
+        "no-lonely-if": ["error"],
+        "no-obj-calls": ["error"],
+        "no-return-assign": ["error"],
+        "no-return-await": ["error"],
+        "no-script-url": ["error"],
+        "no-sequences": ["error"],
+        "no-template-curly-in-string": ["error"],
+        "no-throw-literal": ["error"],
+        "no-undef": ["error"],
+        "no-unexpected-multiline": ["error"],
+        "no-unmodified-loop-condition": ["error"],
+        "no-unreachable": ["error"],
+        "no-unsafe-finally": ["error"],
+        "no-unsafe-negation": ["error"],
+        "no-unused-vars": ["error"],
+        "use-isnan": ["error"],
+        "valid-typeof": ["error", { "requireStringLiterals": true }],
+        "vars-on-top": ["error"],
+        "yoda": ["error"],
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error"
+    }
+}
